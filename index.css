@@ -1,0 +1,84 @@
+body {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  position: relative;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.bottom_input_field {
+  position: absolute;
+  bottom: 10px;
+  align-items: center;
+  display: flex;
+  gap: 6px;
+}
+.bottom_input_field > input {
+  border: none;
+  border: 1px solid dodgerblue;
+  outline: none;
+  height: 40px;
+  border-radius: 10px;
+  width: 200px;
+}
+
+.bottom_input_field > button {
+  border: none;
+  border: 1px solid dodgerblue;
+  outline: none;
+  height: 30px;
+  border-radius: 10px;
+  background-color: white;
+  font-weight: bold;
+  height: 40px;
+}
+#record_btn {
+  border: none;
+  border: 1px solid dodgerblue;
+  outline: none;
+  height: 30px;
+  border-radius: 10px;
+  background-color: white;
+  color: dodgerblue;
+  font-weight: bold;
+  height: 40px;
+}
+#messages {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  overflow-y: scroll;
+  height: 100%;
+  width: 100%;
+}
+.message-from-bot {
+  display: flex;
+  flex-direction: column;
+  place-items: flex-start;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #f1f1f1;
+  max-width: 50%;
+}
+.message-from-user {
+  display: flex;
+  flex-direction: column;
+  place-items: flex-end;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: dodgerblue;
+  color: white;
+  max-width: 50%;
+}
+
+.bot-image {
+  max-width: 80%;
+  max-width: 50%;
+  border-radius: 5px;
+  margin-right: 10px;
+}

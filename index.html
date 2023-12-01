@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wiki Bot</title>
+    <link
+      rel="shortcut icon"
+      href="https://img.icons8.com/?size=500&id=uZrQP6cYos2I&format=png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div>
+      <img
+        src="https://img.icons8.com/?size=500&id=uZrQP6cYos2I&format=png"
+        alt="Wiki Bot"
+        style="height: 50px; width: 50px; border-radius: 50%"
+      />
+      <h1>Wiki Bot</h1>
+    </div>
+    <div id="messages">
+      <div class="message-from-bot">
+        <p>
+          Hi, I am Wiki Bot. I can help you to find information about anything.
+          Just ask me anything.
+        </p>
+      </div>
+    </div>
+    <form onsubmit="return submitHandler(event)" class="bottom_input_field">
+      <!-- Microphone record -->
+      <button
+        onclick="return startSpeechRecognition()"
+        type="button"
+        id="record_btn"
+      >
+        <img
+          src="https://img.icons8.com/?size=250&id=Jo53NUQZiyi7&format=png"
+          alt="Record"
+          style="height: 20px; width: 20px"
+          id="record_img"
+        />
+      </button>
+      <input
+        type="text"
+        id="input_field"
+        placeholder="Ask me anything..."
+        autocomplete="off"
+        autofocus
+      />
+
+      <button type="submit" id="search_btn">
+        <img
+          src="https://img.icons8.com/?size=296&id=AdrKKYXG06TU&format=png"
+          alt="Record"
+          style="height: 20px; width: 20px"
+        />
+      </button>
+    </form>
+    <script src="./index.js"></script>
+  </body>
+</html>
